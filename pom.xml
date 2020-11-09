@@ -254,7 +254,7 @@
 	<repository>
             <id>local-repo</id>
             <name>local maven</name>
-            <url>C:\Users\admin\.m2\repository</url>
+            <url>C:\WINDOWS\system32\config\systemprofile\.m2\repository</url>
             <layout>default</layout>
         </repository>
         <repository>
