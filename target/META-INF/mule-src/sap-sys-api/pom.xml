@@ -41,6 +41,17 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				<cloudHubDeployment>
+					<uri>https://anypoint.mulesoft.com</uri>
+					<muleVersion>4.3.0</muleVersion>
+					<username>MeghaNOV</username>
+					<password>MeghaNov@12345</password>
+					<applicationName>sap-sys-api</applicationName>
+					<environment>Sandbox</environment>
+					<workerType>MICRO</workerType>
+					<objectStoreV2>true</objectStoreV2>
+					<workers>1</workers>					
+				</cloudHubDeployment>	
 				<sharedLibraries>
                         <sharedLibrary>
                              	<groupId>com.sap.conn.idoc</groupId>
@@ -238,6 +249,12 @@
             <id>anypoint-exchange-v2</id>
             <name>Anypoint Exchange</name>
             <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+            <layout>default</layout>
+        </repository>
+	<repository>
+            <id>local-repo</id>
+            <name>local maven</name>
+            <url>C:\WINDOWS\system32\config\systemprofile\.m2\repository</url>
             <layout>default</layout>
         </repository>
         <repository>

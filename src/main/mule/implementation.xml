@@ -288,9 +288,7 @@ output text/plain
 ++ "\n Processed Records: " 		++ payload.processedRecords!]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
-				<json-logger:logger doc:name="Log Migration Report" doc:id="80cc5ef6-82f5-428a-9546-227df95a4506" config-ref="jsonLoggerConfig" message="Migration process has finished: ">
-					<json-logger:content ><![CDATA[#[payload]]]></json-logger:content>
-				</json-logger:logger>
+				
 			</batch:on-complete>
 		</batch:job>
 					
