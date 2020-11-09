@@ -251,6 +251,12 @@
             <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
             <layout>default</layout>
         </repository>
+	<repository>
+            <id>local-repo</id>
+            <name>local maven</name>
+            <url>C:\Users\admin\.m2\repository</url>
+            <layout>default</layout>
+        </repository>
         <repository>
             <id>mulesoft-releases</id>
             <name>MuleSoft Releases Repository</name>
