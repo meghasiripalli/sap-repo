@@ -34,7 +34,6 @@ http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/sc
 			<jms:factory-configuration brokerUrl="${mq.tcp}" />
 		</jms:active-mq-connection>
 	</jms:config>
-	<json-logger:config name="jsonLoggerConfig" doc:name="JSON Logger Config" doc:id="ee3aae5a-d874-413e-bedb-723003615551" environment="${mule.env}" disabledFields="${json.logger.disabledFields}"/>
 	<configuration doc:name="Configuration" doc:id="199aedf1-cbf3-472e-bf5f-3dac53610443" defaultErrorHandler-ref="globalErrorHandler" />
 	<global-property doc:name="Global Property" doc:id="4a5e92b5-cc66-4277-80ce-07da64a08d86" name="env" value="dev" />
 	<secure-properties:config name="securePropertiesConfig" doc:name="Secure Properties Config" doc:id="43c55736-6be4-4b3c-91c2-af3e369623ec" file="config\sap.sys.api.${env}.yaml" key="${key}" >
