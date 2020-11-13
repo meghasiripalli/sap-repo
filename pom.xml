@@ -146,7 +146,7 @@
             <artifactId>sapjco3</artifactId>
             <version>3.x.x</version>
             <classifier>external-library</classifier>
-            <type>dll</type>
+            <type>so</type>
         </dependency>
     	<dependency>
             <groupId>org.apache.activemq</groupId>
